@@ -2,7 +2,7 @@
 
 # 👋👋👋👋👋
 
-Hello! I'm Lara, a 21 years old non-binary university student at [METU](https://metu.edu.tr) trying to code despite my ADHD, nice to meet you!
+Hello! I'm Lara, a 22 years old non-binary university student at [METU](https://metu.edu.tr) trying to code despite my ADHD, nice to meet you!
 
 [![Github Sponsors](https://ziadoua.github.io/m3-Markdown-Badges/badges/Sponsor/sponsor1.svg)](https://github.com/sponsors/laralove143)
 
