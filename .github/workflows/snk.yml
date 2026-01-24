@@ -18,8 +18,8 @@ jobs:
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-contribution-grid-snake.svg?color_snake=618264&color_dots=79ac78
-            dist/github-contribution-grid-snake-dark.svg?color_snake=d0e7d2&color_dots=b0d9b1
+            dist/github-contribution-grid-snake.svg?color_snake=#618264&color_dots=#d0e7d2,#79AC78,#648E63,#4F714F,#3B533A
+            dist/github-contribution-grid-snake-dark.svg?color_snake=#d0e7d2&color_dots=#618264,#B0D9B1,#98BC99,#809E81,#698169
 
       - name: push svg
         uses: crazy-max/ghaction-github-pages@v3.1.0
