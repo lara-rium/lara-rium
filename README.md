@@ -60,6 +60,10 @@ ___
   />
   <img height=200 src="https://github-readme-stats.vercel.app/api/top-langs/?username=lara-rium&exclude_repo=stat112-final&layout=donut&title_color=618264&text_color=79ac78&icon_color=618264&border_color=618264&bg_color=d0e7d2&border_radius=32" />
 </picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/lara-rium/lara-rium/raw/refs/heads/output/github-contribution-grid-snake-dark.svg" />
+  <img src="https://github.com/lara-rium/lara-rium/raw/refs/heads/output/github-contribution-grid-snake.svg" />
+</picture>
 
 ___
 
