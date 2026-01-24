@@ -48,17 +48,17 @@ ___
 
 <picture>
   <source
-    srcset="https://github-readme-stats.vercel.app/api?username=lara-rium&show=reviews&show_icons=true&custom_title=GitHub%20Stats&ring_color=d0e7d2&title_color=d0e7d2&text_color=b0d9b1&icon_color=d0e7d2&border_color=d0e7d2&bg_color=618264&border_radius=32"
+    srcset="https://github-readme-stats.vercel.app/api?username=lara-rium&show=reviews&show_icons=true&custom_title=GitHub%20Stats&ring_color=00c647&title_color=f0f6fc&text_color=f0f6fc&icon_color=00c647&border_color=00c647&bg_color=161b22&border_radius=32"
     media="(prefers-color-scheme: dark)"
   />
-  <img height=200 src="https://github-readme-stats.vercel.app/api?username=lara-rium&show=reviews&show_icons=true&custom_title=GitHub_Stats&ring_color=618264&title_color=618264&text_color=79ac78&icon_color=618264&border_color=618264&bg_color=d0e7d2&border_radius=32" />
-</picture>
+  <img height=200 src="https://github-readme-stats.vercel.app/api?username=lara-rium&show=reviews&show_icons=true&custom_title=GitHub%20Stats&ring_color=216e39&title_color=25292e&text_color=25292e&icon_color=216e39&border_color=216e39&bg_color=ebedf0&border_radius=32" />
+</picture>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <picture>
   <source
-    srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=lara-rium&exclude_repo=stat112-final&layout=donut&title_color=d0e7d2&text_color=b0d9b1&icon_color=d0e7d2&border_color=d0e7d2&bg_color=618264&border_radius=32"
+    srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=lara-rium&exclude_repo=stat112-final&layout=donut&title_color=f0f6fc&text_color=f0f6fc&icon_color=d0e7d2&border_color=00c647&bg_color=161b22&border_radius=32"
     media="(prefers-color-scheme: dark)"
   />
-  <img height=200 src="https://github-readme-stats.vercel.app/api/top-langs/?username=lara-rium&exclude_repo=stat112-final&layout=donut&title_color=618264&text_color=79ac78&icon_color=618264&border_color=618264&bg_color=d0e7d2&border_radius=32" />
+  <img height=200 src="https://github-readme-stats.vercel.app/api/top-langs/?username=lara-rium&exclude_repo=stat112-final&layout=donut&title_color=25292e&text_color=25292e&icon_color=216e39&border_color=216e39&bg_color=ebedf0&border_radius=32" />
 </picture>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github.com/lara-rium/lara-rium/raw/refs/heads/output/github-contribution-grid-snake-dark.svg" />
