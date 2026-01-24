@@ -52,7 +52,7 @@ ___
     media="(prefers-color-scheme: dark)"
   />
   <img height=200 src="https://github-readme-stats.vercel.app/api?username=lara-rium&show=reviews&show_icons=true&custom_title=GitHub%20Stats&ring_color=216e39&title_color=25292e&text_color=25292e&icon_color=216e39&border_color=216e39&bg_color=ebedf0&border_radius=32" />
-</picture>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</picture>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <picture>
   <source
     srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=lara-rium&exclude_repo=stat112-final&layout=donut&title_color=f0f6fc&text_color=f0f6fc&icon_color=d0e7d2&border_color=00c647&bg_color=161b22&border_radius=32"
