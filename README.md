@@ -55,10 +55,10 @@ ___
 </picture>
 <picture>
   <source
-    srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=lara-rium&exclude_repo=lgbt-flag,stat112-final&layout=donut&title_color=d0e7d2&text_color=b0d9b1&icon_color=d0e7d2&border_color=d0e7d2&bg_color=618264&border_radius=32"
+    srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=lara-rium&exclude_repo=stat112-final&layout=donut&title_color=d0e7d2&text_color=b0d9b1&icon_color=d0e7d2&border_color=d0e7d2&bg_color=618264&border_radius=32"
     media="(prefers-color-scheme: dark)"
   />
-  <img height=200 src="https://github-readme-stats.vercel.app/api/top-langs/?username=lara-rium&exclude_repo=lgbt-flag,stat112-final&layout=donut&title_color=618264&text_color=79ac78&icon_color=618264&border_color=618264&bg_color=d0e7d2&border_radius=32" />
+  <img height=200 src="https://github-readme-stats.vercel.app/api/top-langs/?username=lara-rium&exclude_repo=stat112-final&layout=donut&title_color=618264&text_color=79ac78&icon_color=618264&border_color=618264&bg_color=d0e7d2&border_radius=32" />
 </picture>
 
 ___
