@@ -14,7 +14,6 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           config_timezone: Europe/Istanbul
           repositories_skipped: lgbt-flag
-          config_display: columns
           base: header, community, repositories, metadata
           base_indepth: yes
           repositories_affiliations: collaborator
@@ -40,15 +39,23 @@ jobs:
           plugin_wakatime_url: https://wakapi.lara.lv
           plugin_wakatime_days: 30
           plugin_wakatime_limit: 0
+          plugin_languages: yes
+          plugin_languages_sections: most-used
+          plugin_languages_details: lines
+          plugin_languages_indepth: yes
           plugin_stargazers: yes
           plugin_stargazers_days: 0
           plugin_stargazers_charts_type: graph
+          plugin_lines: yes
+          plugin_lines_sections: base, history
+          plugin_lines_repositories_limit: 16
           plugin_habits: yes
           plugin_habits_days: 30
           plugin_sponsors: yes
           plugin_sponsors_past: yes
           plugin_sponsors_title: Would you like to sponsor my work?
           plugin_sponsors_sections: goal, list
+          plugin_traffic: yes
   github-metrics-terminal:
     runs-on: ubuntu-latest
     permissions:
@@ -101,6 +108,5 @@ jobs:
           plugin_sponsors: yes
           plugin_sponsors_past: yes
           plugin_sponsors_title: Would you like to sponsor my work?
+          plugin_sponsors_sections: goal, list
           plugin_traffic: yes
-
-          
