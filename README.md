@@ -2,6 +2,11 @@
 
 # 👋
 
+<img src="/github-metrics.svg" width="100%">
+<picture>
+  <img src="/github-metrics-terminal.svg">
+</picture>
+
 Hello! I'm Lara, a 22 years old non-binary university student at [METU](https://metu.edu.tr) coding whatever is my cup of tea, nice to meet you!
 
 [![Github Sponsors](https://ziadoua.github.io/m3-Markdown-Badges/badges/Sponsor/sponsor1.svg)](https://github.com/sponsors/lara-rium)
