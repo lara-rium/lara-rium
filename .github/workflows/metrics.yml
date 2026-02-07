@@ -19,7 +19,7 @@ jobs:
           base: header, community, repositories, metadata
           base_indepth: yes
           repositories_affiliations: collaborator
-          commits_authoring: lara, lara kayaalp, Lara, Lara Kayaalp, laralove, laralove143, lara-rium, me@lara.lv, laralove143@icloud.com, laralovesyou143@gmail.com
+          commits_authoring: lara, lara kayaalp, laralove, laralove143, lara-rium, me@lara.lv, laralove143@icloud.com, laralovesyou143@gmail.com
           # debug_flags: |
             # --cakeday
             # --halloween
@@ -41,7 +41,7 @@ jobs:
           plugin_wakatime_days: 30
           plugin_wakatime_limit: 0
           plugin_languages: yes
-          plugin_languages_sections: recently-used
+          plugin_languages_sections: most-used
           plugin_languages_details: lines
           plugin_languages_indepth: yes
           plugin_stargazers: yes
