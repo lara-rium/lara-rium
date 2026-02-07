@@ -2,9 +2,9 @@
 
 # 👋
 
-<img src="/github-metrics.svg" width="100%">
 <picture>
   <img src="/github-metrics-terminal.svg">
+  <img src="/github-metrics.svg" width="100%">
 </picture>
 
 Hello! I'm Lara, a 22 years old non-binary university student at [METU](https://metu.edu.tr) coding whatever is my cup of tea, nice to meet you!
