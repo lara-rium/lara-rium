@@ -26,6 +26,7 @@ jobs:
           plugin_calendar: yes
           plugin_calendar_limit: 0
           plugin_activity: yes
+          plugin_activity_days: 30
           plugin_notable: yes
           plugin_notable_from: all
           plugin_notable_indepth: yes
@@ -47,6 +48,12 @@ jobs:
           plugin_sponsors: yes
           plugin_sponsors_past: yes
           plugin_sponsors_title: Would you like to sponsor my work?
+          plugin_sponsors_sections: goal, list
+  github-metrics-terminal:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
       - uses: lowlighter/metrics@latest
         with:
           filename: github-metrics-terminal.svg
@@ -54,7 +61,6 @@ jobs:
           config_timezone: Europe/Istanbul
           repositories_skipped: lgbt-flag
           template: terminal
-          config_display: columns
           base: header, community, repositories, metadata
           base_indepth: yes
           repositories_affiliations: collaborator
@@ -66,6 +72,7 @@ jobs:
           plugin_calendar: yes
           plugin_calendar_limit: 0
           plugin_activity: yes
+          plugin_activity_days: 30
           plugin_notable: yes
           plugin_notable_from: all
           plugin_notable_indepth: yes
