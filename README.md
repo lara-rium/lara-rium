@@ -1,23 +1,36 @@
 <div align="center"> 
 
-Hello! I'm Lara, a 22 years old non-binary university student at [METU](https://metu.edu.tr) coding whatever is my cup of tea, nice to meet you!
+# hi there!
+
+i'm **lara**, a 22 years old non-binary university student at [METU](https://metu.edu.tr) **coding whatever is my cup of tea**, nice to meet you.
 
 <picture>
+<source media="(prefers-color-scheme: dark)" srcset="stats-dark.svg" />
+<img src="stats.svg" />
+</picture>
 
-![](github-metrics-terminal.svg)
-<!-- <source media="(prefers-color-scheme: dark)" srcset="https://github.com/lara-rium/lara-rium/raw/refs/heads/output/github-contribution-grid-snake-dark.svg" />
-<img src="https://github.com/lara-rium/lara-rium/raw/refs/heads/output/github-contribution-grid-snake.svg" /> -->
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="snake-dark.svg" />
+<img src="snake.svg" />
+</picture>
+<br/>
+<br/>
+<picture>
 
 ![](github-metrics.svg)
 </picture>
 
 [![Github Sponsors](https://ziadoua.github.io/m3-Markdown-Badges/badges/Sponsor/sponsor1.svg)](https://github.com/sponsors/lara-rium)
 
+## my coding activity <ins>second by second</ins>
+
+*click on the image to **dive deeper***
+
 [![](wakapi-grafana.png)](https://grafana.lara.lv/d/BRqbRfVGz?kiosk)
 
 ---
 
-# 💬 Let's get in touch
+## let's <ins>get in touch</ins>
 
 [![Discord](https://discordapp.com/api/guilds/903367565349384202/widget.png?style=banner2)](https://lara.lv/discord)
 
@@ -28,7 +41,7 @@ Hello! I'm Lara, a 22 years old non-binary university student at [METU](https://
 
 ---
 
-# 🧑‍💻 Tools that make my day
+## tools that <ins>make my day</ins>
 
 [![Elixir](https://github.com/lara-rium/lara-rium/blob/main/badges/elixir.svg)](https://elixir-lang.org)
 [![Rust](https://ziadoua.github.io/m3-Markdown-Badges/badges/Rust/rust1.svg)](https://www.rust-lang.org)
@@ -55,23 +68,25 @@ Hello! I'm Lara, a 22 years old non-binary university student at [METU](https://
 
 ___
 
-# 💼 My programming journey so far
+## my programming journey <ins>so far</ins>
 
-*Check out pinned respositories for my open source work*
+*check out **pinned respositories** for my open source work*
 
-Cooking up some stuff in [Robert Industries](https://github.com/robertindustries)
+cooking up **some stuff** at [Robert Industries](https://github.com/robertindustries)
 
-Ex-developer at [sorter](https://github.com/sorterisntonline)
+ex-developer at [sorter](https://github.com/sorterisntonline)
 
-Development team member of [Twilight](https://github.com/twilight-rs/twilight)
+development team member of [Twilight](https://github.com/twilight-rs/twilight)
 
-Alumni HR responsible of [Board of European Students of Technology](https://best.eu.org) IT Department
+alumni HR responsible of [Board of European Students of Technology](https://best.eu.org) IT Department
 
-Past volunteer at [ÜNOG](https://unog.dev)
+past volunteer at [ÜNOG](https://unog.dev)
 
 ___
 
-# 🎵 Here's my music taste
+## some playlists <ins>for you</ins>
+
+*why aren't my playlists on spotify? [**because**](https://boycottspotify.univer.se)*
 
 [![Feel Again](https://img.shields.io/badge/Feel_Again-red?style=for-the-badge&label=🎸&labelColor=red)](https://music.apple.com/playlist/feel-again/pl.u-MDAWvG9sANpJZvx)
 [![Chill](https://img.shields.io/badge/Chill-yellow?style=for-the-badge&label=🍃&labelColor=yellow)](https://music.apple.com/playlist/chill/pl.u-EdAVzWWCDV85Wy2)
