@@ -123,8 +123,6 @@ jobs:
           plugin_lines: yes
           plugin_lines_sections: base, history
           plugin_lines_repositories_limit: 16
-          plugin_habits: yes
-          plugin_habits_days: 30
           plugin_sponsors: yes
           plugin_sponsors_past: yes
           plugin_sponsors_title: Would you like to sponsor my work?
