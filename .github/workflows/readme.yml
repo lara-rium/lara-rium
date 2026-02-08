@@ -15,12 +15,12 @@ jobs:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             github-contribution-grid-snake.svg
-            github-contribution-grid-snake-dark.svg?palette=github-dark
+            github-contribution-grid-snake-dark.svg
       - run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
           git add github-contribution-grid-snake.svg
-          git add github-contribution-grid-snake-dark.svg?palette=github-dark
+          git add github-contribution-grid-snake-dark.svg
           git commit -m "update snake"
           git push
   wakapi-grafana:
