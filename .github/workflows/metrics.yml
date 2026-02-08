@@ -9,6 +9,7 @@ jobs:
     permissions:
       contents: write
     steps:
+      - uses: actions/checkout@v4
       - id: download
         uses: robinraju/release-downloader@v1.12
         with:
