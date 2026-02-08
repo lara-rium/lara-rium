@@ -68,6 +68,7 @@ jobs:
     permissions:
       contents: write
     steps:
+    - uses: actions/checkout@v6
     - uses: cicirello/user-statistician@v1
       with:
         image-file: stats.svg
@@ -84,6 +85,7 @@ jobs:
     permissions:
       contents: write
     steps:
+    - uses: actions/checkout@v6
     - uses: cicirello/user-statistician@v1
       with:
         image-file: stats-dark.svg
