@@ -1,19 +1,23 @@
 <div align="center"> 
 
-# 👋
+Hello! I'm Lara, a 22 years old non-binary university student at [METU](https://metu.edu.tr) coding whatever is my cup of tea, nice to meet you!
 
 <picture>
-  <img src="/github-metrics-terminal.svg">
-  <img src="/github-metrics.svg" width="100%">
-</picture>
 
-Hello! I'm Lara, a 22 years old non-binary university student at [METU](https://metu.edu.tr) coding whatever is my cup of tea, nice to meet you!
+![](github-metrics-terminal.svg)
+<!-- <source media="(prefers-color-scheme: dark)" srcset="https://github.com/lara-rium/lara-rium/raw/refs/heads/output/github-contribution-grid-snake-dark.svg" />
+<img src="https://github.com/lara-rium/lara-rium/raw/refs/heads/output/github-contribution-grid-snake.svg" /> -->
+
+![](github-metrics.svg)
+</picture>
 
 [![Github Sponsors](https://ziadoua.github.io/m3-Markdown-Badges/badges/Sponsor/sponsor1.svg)](https://github.com/sponsors/lara-rium)
 
-___
+[![](wakapi-grafana.png)](https://grafana.lara.lv/d/BRqbRfVGz?kiosk)
 
-# 💬
+---
+
+# 💬 Let's get in touch
 
 [![Discord](https://discordapp.com/api/guilds/903367565349384202/widget.png?style=banner2)](https://lara.lv/discord)
 
@@ -22,9 +26,9 @@ ___
 [![Instagram](https://ziadoua.github.io/m3-Markdown-Badges/badges/Instagram/instagram1.svg)](https://lara.lv/instagram)
 [![Mail](https://ziadoua.github.io/m3-Markdown-Badges/badges/Mail/mail1.svg)](mailto:me@lara.lv)
 
-___
+---
 
-# 🧑‍💻
+# 🧑‍💻 Tools that make my day
 
 [![Elixir](https://github.com/lara-rium/lara-rium/blob/main/badges/elixir.svg)](https://elixir-lang.org)
 [![Rust](https://ziadoua.github.io/m3-Markdown-Badges/badges/Rust/rust1.svg)](https://www.rust-lang.org)
@@ -51,28 +55,13 @@ ___
 
 ___
 
-<picture>
-  <source
-    srcset="https://github-readme-stats.vercel.app/api?username=lara-rium&show=reviews&show_icons=true&custom_title=GitHub%20Stats&ring_color=00c647&title_color=f0f6fc&text_color=f0f6fc&icon_color=00c647&border_color=00c647&bg_color=161b22&border_radius=32"
-    media="(prefers-color-scheme: dark)"
-  />
-  <img height=200 src="https://github-readme-stats.vercel.app/api?username=lara-rium&show=reviews&show_icons=true&custom_title=GitHub%20Stats&ring_color=216e39&title_color=25292e&text_color=25292e&icon_color=216e39&border_color=216e39&bg_color=ebedf0&border_radius=32" />
-</picture>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<picture>
-  <source
-    srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=lara-rium&exclude_repo=stat112-final&layout=donut&title_color=f0f6fc&text_color=f0f6fc&icon_color=d0e7d2&border_color=00c647&bg_color=161b22&border_radius=32"
-    media="(prefers-color-scheme: dark)"
-  />
-  <img height=200 src="https://github-readme-stats.vercel.app/api/top-langs/?username=lara-rium&exclude_repo=stat112-final&layout=donut&title_color=25292e&text_color=25292e&icon_color=216e39&border_color=216e39&bg_color=ebedf0&border_radius=32" />
-</picture>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/lara-rium/lara-rium/raw/refs/heads/output/github-contribution-grid-snake-dark.svg" />
-  <img src="https://github.com/lara-rium/lara-rium/raw/refs/heads/output/github-contribution-grid-snake.svg" />
-</picture>
+# 💼 My programming journey so far
 
-___
+*Check out pinned respositories for my open source work*
 
-# 💼
+Cooking up some stuff in [Robert Industries](https://github.com/robertindustries)
+
+Ex-developer at [sorter](https://github.com/sorterisntonline)
 
 Development team member of [Twilight](https://github.com/twilight-rs/twilight)
 
@@ -82,33 +71,7 @@ Past volunteer at [ÜNOG](https://unog.dev)
 
 ___
 
-# 🛠️
-
-## [Timezoner](https://github.com/laralove143/timezoner)
-
-A Discord bot that converts times so that everyone sees them in their own timezone
-
-## [Interchannel Message Mover](https://github.com/laralove143/interchannel_message_mover)
-
-A Discord bot to move messages between channels
-
-## [Message Bender](https://github.com/laralove143/message_bender)
-
-A Discord bot that lets you edit other people's messages
-
-## [Auto Spoiler](https://github.com/laralove143/auto_spoiler)
-
-A Discord bot that automatically puts possibly triggering words in spoilers
-
-## [Sorter](https://github.com/sorterisntonline)
-
-Hyperoptimal pairwise ranked-choice system available at [sorter.social](https://sorter.social)
-
-<sub>*ex-developer*</sub>
-
-___
-
-# 🎵
+# 🎵 Here's my music taste
 
 [![Feel Again](https://img.shields.io/badge/Feel_Again-red?style=for-the-badge&label=🎸&labelColor=red)](https://music.apple.com/playlist/feel-again/pl.u-MDAWvG9sANpJZvx)
 [![Chill](https://img.shields.io/badge/Chill-yellow?style=for-the-badge&label=🍃&labelColor=yellow)](https://music.apple.com/playlist/chill/pl.u-EdAVzWWCDV85Wy2)
