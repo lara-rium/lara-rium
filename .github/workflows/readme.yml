@@ -69,6 +69,8 @@ jobs:
       contents: write
     steps:
     - uses: actions/checkout@v6
+      with:
+        ref: main
     - uses: cicirello/user-statistician@v1
       with:
         image-file: stats.svg
@@ -86,6 +88,8 @@ jobs:
       contents: write
     steps:
     - uses: actions/checkout@v6
+      with:
+        ref: main
     - uses: cicirello/user-statistician@v1
       with:
         image-file: stats-dark.svg
