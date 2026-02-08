@@ -21,9 +21,13 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git add github-contribution-grid-snake.svg
           git add github-contribution-grid-snake-dark.svg
-          git commit -m "update snake"
-          git pull --rebase --autostash
-          git push
+          if [[ -n $(git status --porcelain) ]]; then
+            git commit -m "update snake"
+            git pull --rebase --autostash
+            git push
+          else
+            echo "nothing new"
+          fi
   wakapi-grafana:
     runs-on: ubuntu-latest
     permissions:
@@ -44,13 +48,17 @@ jobs:
           ${{ fromJson(steps.download.outputs.downloaded_files)[0] }} server --api.default-encoding png --browser.path ${{ steps.chrome.outputs.chrome-path }} &
           sleep 10
           curl -H 'X-Auth-Token: -' -L http://localhost:8081/render?url=https://grafana.lara.lv/d/BRqbRfVGz -o wakapi-grafana-raw.png
-          magick wakapi-grafana-raw.png -gravity North -chop 0x150 wakapi-grafana.png
+          magick wakapi-grafana-raw.png -gravity North -chop 0x130 wakapi-grafana.png
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
           git add wakapi-grafana.png
-          git commit -m "update screenshot"
-          git pull --rebase --autostash
-          git push
+          if [[ -n $(git status --porcelain) ]]; then
+            git commit -m "update screenshot"
+            git pull --rebase --autostash
+            git push
+          else
+            echo "nothing new"
+          fi
   github-metrics:
     runs-on: ubuntu-latest
     permissions:
@@ -61,16 +69,16 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           config_timezone: Europe/Istanbul
           repositories_skipped: lgbt-flag
-          base: header, repositories, metadata
+          base: header, repositories
           base_indepth: yes
           repositories_affiliations: collaborator
           commits_authoring: lara, lara kayaalp, laralove, laralove143, lara-rium, me@lara.lv, laralove143@icloud.com, laralovesyou143@gmail.com
-          # debug_flags: |
-            # --cakeday
-            # --halloween
-            # --winter
+          debug_flags: |
+            --cakeday
+          # --halloween
+          # --winter
           plugin_calendar: yes
-          plugin_calendar_limit: 0
+          plugin_calendar_limit: 5
           plugin_notable: yes
           plugin_notable_from: all
           plugin_notable_indepth: yes
@@ -79,25 +87,16 @@ jobs:
           plugin_code_days: 30
           plugin_music: yes
           plugin_music_playlist: https://embed.music.apple.com/tr/playlist/everythings-right-place/pl.u-EdAVvaGCDV85Wy2
-          plugin_wakatime: yes
-          plugin_wakatime_token: 62bd08ab-9399-4052-b059-4ef1562943fb
-          plugin_wakatime_url: https://wakapi.lara.lv
-          plugin_wakatime_days: 30
-          plugin_wakatime_limit: 0
-          plugin_languages: yes
-          plugin_languages_sections: most-used
-          plugin_languages_details: lines
-          plugin_languages_indepth: yes
           plugin_stargazers: yes
           plugin_stargazers_days: 0
+          plugin_stargazers_charts: no
           plugin_stargazers_charts_type: graph
           plugin_lines: yes
           plugin_lines_sections: base, history
-          plugin_lines_repositories_limit: 16
           plugin_sponsors: yes
           plugin_sponsors_past: yes
           plugin_sponsors_title: Would you like to sponsor my work?
-          plugin_sponsors_sections: goal, list
+          plugin_sponsors_sections: list
           plugin_traffic: yes
   github-metrics-terminal:
     runs-on: ubuntu-latest
@@ -111,37 +110,13 @@ jobs:
           config_timezone: Europe/Istanbul
           repositories_skipped: lgbt-flag
           template: terminal
-          base: header, repositories, metadata
+          base: header, repositories
           base_indepth: yes
           repositories_affiliations: collaborator
           commits_authoring: lara, lara kayaalp, laralove, laralove143, lara-rium, me@lara.lv, laralove143@icloud.com, laralovesyou143@gmail.com
-          # debug_flags: |
-            # --cakeday
-            # --halloween
-            # --winter
-          plugin_calendar: yes
-          plugin_calendar_limit: 0  
-          plugin_notable: yes
-          plugin_notable_from: all
-          plugin_notable_indepth: yes
-          plugin_notable_types: commit, pull_request, issue
-          plugin_code: yes
-          plugin_code_days: 30
-          plugin_music: yes
-          plugin_music_playlist: https://embed.music.apple.com/tr/playlist/everythings-right-place/pl.u-EdAVvaGCDV85Wy2
-          plugin_wakatime: yes
-          plugin_wakatime_token: 62bd08ab-9399-4052-b059-4ef1562943fb
-          plugin_wakatime_url: https://wakapi.lara.lv
-          plugin_wakatime_days: 30
-          plugin_wakatime_limit: 0
-          plugin_stargazers: yes
-          plugin_stargazers_days: 0
-          plugin_stargazers_charts_type: graph
+          debug_flags: |
+            --cakeday  
+          # --halloween
+          # --winter
           plugin_lines: yes
-          plugin_lines_sections: base, history
-          plugin_lines_repositories_limit: 16
-          plugin_sponsors: yes
-          plugin_sponsors_past: yes
-          plugin_sponsors_title: Would you like to sponsor my work?
-          plugin_sponsors_sections: goal, list
-          plugin_traffic: yes
+          plugin_lines_history_limit: 0
