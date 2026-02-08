@@ -4,6 +4,24 @@ on:
   workflow_dispatch:
   push:
 jobs:
+  snake:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            github-contribution-grid-snake.svg
+            github-contribution-grid-snake-dark.svg?palette=github-dark
+      - run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git add github-contribution-grid-snake.svg
+          git add github-contribution-grid-snake-dark.svg?palette=github-dark
+          git commit -m "update snake"
+          git push
   wakapi-grafana:
     runs-on: ubuntu-latest
     permissions:
