@@ -19,13 +19,15 @@ jobs:
       - id: chrome
         uses: browser-actions/setup-chrome@v2
       - run: |
-           chmod +x ${{ fromJson(steps.download.outputs.downloaded_files)[0] }}
-           ${{ fromJson(steps.download.outputs.downloaded_files)[0] }} server --browser.path ${{ steps.chrome.outputs.chrome-path }} &
-           sleep 10
-           curl -H 'X-Auth-Token: -' -L http://localhost:8081/render?url=https://grafana.lara.lv/d/BRqbRfVGz -o wakapi-grafana.png
-           git add wakapi-grafana.png
-           git commit -m "update file"
-           git push
+          chmod +x ${{ fromJson(steps.download.outputs.downloaded_files)[0] }}
+          ${{ fromJson(steps.download.outputs.downloaded_files)[0] }} server --browser.path ${{ steps.chrome.outputs.chrome-path }} &
+          sleep 10
+          curl -H 'X-Auth-Token: -' -L http://localhost:8081/render?url=https://grafana.lara.lv/d/BRqbRfVGz -o wakapi-grafana.png
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git add wakapi-grafana.png
+          git commit -m "update screenshot"
+          git push
   github-metrics:
     runs-on: ubuntu-latest
     permissions:
