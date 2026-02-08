@@ -18,6 +18,7 @@ jobs:
       - id: chrome
         uses: browser-actions/setup-chrome@v2
       - run: |
+           chmod +x ${{ fromJson(steps.download.outputs.downloaded_files)[0] }}
            ${{ fromJson(steps.download.outputs.downloaded_files)[0] }} server --browser.path ${{ steps.chrome.outputs.chrome-path }} &
            curl -H 'X-Auth-Token: -' -L http://localhost:8081/render?url=https://grafana.lara.lv/d/BRqbRfVGz -o wakapi-grafana.png
            git add wakapi-grafana.png
