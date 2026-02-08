@@ -14,7 +14,7 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           config_timezone: Europe/Istanbul
           repositories_skipped: lgbt-flag
-          base: header, community, repositories, metadata
+          base: header, repositories, metadata
           base_indepth: yes
           repositories_affiliations: collaborator
           commits_authoring: lara, lara kayaalp, laralove, laralove143, lara-rium, me@lara.lv, laralove143@icloud.com, laralovesyou143@gmail.com
@@ -24,8 +24,6 @@ jobs:
             # --winter
           plugin_calendar: yes
           plugin_calendar_limit: 0
-          plugin_activity: yes
-          plugin_activity_days: 30
           plugin_notable: yes
           plugin_notable_from: all
           plugin_notable_indepth: yes
@@ -49,8 +47,6 @@ jobs:
           plugin_lines: yes
           plugin_lines_sections: base, history
           plugin_lines_repositories_limit: 16
-          plugin_habits: yes
-          plugin_habits_days: 30
           plugin_sponsors: yes
           plugin_sponsors_past: yes
           plugin_sponsors_title: Would you like to sponsor my work?
@@ -68,7 +64,7 @@ jobs:
           config_timezone: Europe/Istanbul
           repositories_skipped: lgbt-flag
           template: terminal
-          base: header, community, repositories, metadata
+          base: header, repositories, metadata
           base_indepth: yes
           repositories_affiliations: collaborator
           commits_authoring: lara, lara kayaalp, laralove, laralove143, lara-rium, me@lara.lv, laralove143@icloud.com, laralovesyou143@gmail.com
@@ -77,9 +73,7 @@ jobs:
             # --halloween
             # --winter
           plugin_calendar: yes
-          plugin_calendar_limit: 0
-          plugin_activity: yes
-          plugin_activity_days: 30
+          plugin_calendar_limit: 0  
           plugin_notable: yes
           plugin_notable_from: all
           plugin_notable_indepth: yes
