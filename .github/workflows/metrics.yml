@@ -18,11 +18,13 @@ jobs:
           fileName: grafana-image-renderer-linux-amd64
       - id: chrome
         uses: browser-actions/setup-chrome@v2
+      - uses: mfinelli/setup-imagemagick@v7
       - run: |
           chmod +x ${{ fromJson(steps.download.outputs.downloaded_files)[0] }}
           ${{ fromJson(steps.download.outputs.downloaded_files)[0] }} server --api.default-encoding png --browser.path ${{ steps.chrome.outputs.chrome-path }} &
           sleep 10
-          curl -H 'X-Auth-Token: -' -L http://localhost:8081/render?url=https://grafana.lara.lv/d/BRqbRfVGz -o wakapi-grafana.png
+          curl -H 'X-Auth-Token: -' -L http://localhost:8081/render?url=https://grafana.lara.lv/d/BRqbRfVGz -o wakapi-grafana-raw.png
+          magick wakapi-grafana-raw.png -gravity North -chop 0x170 wakapi-grafana.png
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
           git add wakapi-grafana.png
