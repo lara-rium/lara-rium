@@ -1,4 +1,4 @@
-name: Metrics
+name: readme
 on:
   schedule: [{cron: "0 0 * * *"}]
   workflow_dispatch:
@@ -22,6 +22,7 @@ jobs:
           git add github-contribution-grid-snake.svg
           git add github-contribution-grid-snake-dark.svg
           git commit -m "update snake"
+          git pull --rebase --autostash
           git push
   wakapi-grafana:
     runs-on: ubuntu-latest
@@ -48,6 +49,7 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git add wakapi-grafana.png
           git commit -m "update screenshot"
+          git pull --rebase --autostash
           git push
   github-metrics:
     runs-on: ubuntu-latest
