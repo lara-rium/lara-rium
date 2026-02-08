@@ -70,12 +70,10 @@ jobs:
           config_timezone: Europe/Istanbul
           repositories_skipped: lgbt-flag
           base:
-          repositories_affiliations: collaborator
+          repositories_affiliations: owner, collaborator, organization_member
           commits_authoring: lara, lara kayaalp, laralove, laralove143, lara-rium, me@lara.lv, laralove143@icloud.com, laralovesyou143@gmail.com
           debug_flags: |
-            --halloween
-          # --cakeday
-          # --winter
+            --winter
           plugin_calendar: yes
           plugin_calendar_limit: 5
           plugin_notable: yes
@@ -85,7 +83,7 @@ jobs:
           plugin_code: yes
           plugin_code_days: 30
           plugin_music: yes
-          plugin_music_playlist: https://embed.music.apple.com/tr/playlist/everythings-right-place/pl.u-EdAVvaGCDV85Wy2
+          plugin_music_playlist: https://music.apple.com/tr/playlist/everythings-right-place/pl.u-EdAVvaGCDV85Wy2
           plugin_lines: yes
           plugin_lines_sections: base, history
           plugin_sponsors: yes
@@ -109,9 +107,5 @@ jobs:
           base_indepth: yes
           repositories_affiliations: collaborator
           commits_authoring: lara, lara kayaalp, laralove, laralove143, lara-rium, me@lara.lv, laralove143@icloud.com, laralovesyou143@gmail.com
-          debug_flags: |
-            --cakeday  
-          # --halloween
-          # --winter
           plugin_lines: yes
           plugin_lines_history_limit: 0
