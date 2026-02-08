@@ -14,13 +14,13 @@ jobs:
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            github-contribution-grid-snake.svg
-            github-contribution-grid-snake-dark.svg
+            snake.svg
+            snake-dark.svg?palette=github-dark
       - run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
-          git add github-contribution-grid-snake.svg
-          git add github-contribution-grid-snake-dark.svg
+          git add snake.svg
+          git add snake-dark.svg
           if [[ -n $(git status --porcelain) ]]; then
             git commit -m "update snake"
             git pull --rebase --autostash
@@ -66,14 +66,14 @@ jobs:
     steps:
     - uses: actions/checkout@v6
     - run: |
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "github-actions[bot]"
-          git pull --rebase --autostash
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git config --global user.name "github-actions[bot]"
+        git pull --rebase --autostash
     - uses: cicirello/user-statistician@v1
       with:
         image-file: stats.svg
         include-title: false
-        language-repository-exclusions: lgbt-flag
+        language-repository-exclusions: lgbt-flag, stat112-final
         show-border: false
         hide-keys: followers, following
         commit-message: update stats
@@ -86,14 +86,14 @@ jobs:
     steps:
     - uses: actions/checkout@v6
     - run: |
-      git config --global user.email "github-actions[bot]@users.noreply.github.com"
-      git config --global user.name "github-actions[bot]"
-      git pull --rebase --autostash
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git config --global user.name "github-actions[bot]"
+        git pull --rebase --autostash
     - uses: cicirello/user-statistician@v1
       with:
         image-file: stats-dark.svg
         include-title: false
-        language-repository-exclusions: lgbt-flag
+        language-repository-exclusions: lgbt-flag, stat112-final
         colors: dark
         show-border: false
         hide-keys: followers, following
