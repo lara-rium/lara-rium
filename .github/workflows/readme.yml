@@ -65,6 +65,10 @@ jobs:
       contents: write
     steps:
     - uses: actions/checkout@v6
+    - run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git pull --rebase --autostash
     - uses: cicirello/user-statistician@v1
       with:
         image-file: stats.svg
@@ -81,6 +85,10 @@ jobs:
       contents: write
     steps:
     - uses: actions/checkout@v6
+    - run: |
+      git config --global user.email "github-actions[bot]@users.noreply.github.com"
+      git config --global user.name "github-actions[bot]"
+      git pull --rebase --autostash
     - uses: cicirello/user-statistician@v1
       with:
         image-file: stats-dark.svg
