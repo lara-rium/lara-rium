@@ -20,7 +20,7 @@ jobs:
         uses: browser-actions/setup-chrome@v2
       - run: |
           chmod +x ${{ fromJson(steps.download.outputs.downloaded_files)[0] }}
-          ${{ fromJson(steps.download.outputs.downloaded_files)[0] }} server --browser.path ${{ steps.chrome.outputs.chrome-path }} &
+          ${{ fromJson(steps.download.outputs.downloaded_files)[0] }} server --api.default-encoding png --browser.path ${{ steps.chrome.outputs.chrome-path }} &
           sleep 10
           curl -H 'X-Auth-Token: -' -L http://localhost:8081/render?url=https://grafana.lara.lv/d/BRqbRfVGz -o wakapi-grafana.png
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
