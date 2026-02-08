@@ -4,6 +4,25 @@ on:
   workflow_dispatch:
   push:
 jobs:
+  wakapi-grafana:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - id: download
+        uses: robinraju/release-downloader@v1.12
+        with:
+          repository: grafana/grafana-image-renderer
+          latest: true
+          fileName: grafana-image-renderer-linux-amd64
+      - id: chrome
+        uses: browser-actions/setup-chrome@v2
+      - run: |
+           ${{steps.download.outputs.release_name}} server --browser.path ${{ steps.chrome.outputs.chrome-path }} &
+           curl -H 'X-Auth-Token: -' -L http://localhost:8081/render?url=https://grafana.lara.lv/d/BRqbRfVGz -o wakapi-grafana.png
+           git add wakapi-grafana.png
+           git commit -m "update file"
+           git push
   github-metrics:
     runs-on: ubuntu-latest
     permissions:
