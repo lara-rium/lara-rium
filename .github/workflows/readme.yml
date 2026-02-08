@@ -9,7 +9,7 @@ jobs:
       contents: write
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
@@ -33,7 +33,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - id: download
         uses: robinraju/release-downloader@v1.12
         with:
@@ -59,6 +59,35 @@ jobs:
           else
             echo "nothing new"
           fi
+  stats:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v6
+    - uses: cicirello/user-statistician@v1
+      with:
+        image-file: stats.svg
+        include-title: false
+        language-repository-exclusions: lgbt-flag
+        show-border: false
+        hide-keys: followers, following
+        commit-message: update stats
+      env:
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+  stats-dark:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v6
+    - uses: cicirello/user-statistician@v1
+      with:
+        image-file: stats-dark.svg
+        include-title: false
+        language-repository-exclusions: lgbt-flag
+        colors: dark
+        show-border: false
+        hide-keys: followers, following
+        commit-message: update stats
+      env:
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
   github-metrics:
     runs-on: ubuntu-latest
     permissions:
@@ -72,8 +101,6 @@ jobs:
           base:
           repositories_affiliations: owner, collaborator, organization_member
           commits_authoring: lara, lara kayaalp, laralove, laralove143, lara-rium, me@lara.lv, laralove143@icloud.com, laralovesyou143@gmail.com
-          debug_flags: |
-            --winter
           plugin_calendar: yes
           plugin_calendar_limit: 5
           plugin_notable: yes
@@ -82,30 +109,10 @@ jobs:
           plugin_notable_types: commit, pull_request, issue
           plugin_code: yes
           plugin_code_days: 30
-          plugin_music: yes
-          plugin_music_playlist: https://music.apple.com/tr/playlist/everythings-right-place/pl.u-EdAVvaGCDV85Wy2
           plugin_lines: yes
-          plugin_lines_sections: base, history
+          plugin_lines_sections: base
           plugin_sponsors: yes
           plugin_sponsors_past: yes
           plugin_sponsors_title: Would you like to sponsor my work?
           plugin_sponsors_sections: list
           plugin_traffic: yes
-  github-metrics-terminal:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - uses: lowlighter/metrics@latest
-        with:
-          filename: github-metrics-terminal.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          config_timezone: Europe/Istanbul
-          repositories_skipped: lgbt-flag
-          template: terminal
-          base: header, repositories
-          base_indepth: yes
-          repositories_affiliations: collaborator
-          commits_authoring: lara, lara kayaalp, laralove, laralove143, lara-rium, me@lara.lv, laralove143@icloud.com, laralovesyou143@gmail.com
-          plugin_lines: yes
-          plugin_lines_history_limit: 0
