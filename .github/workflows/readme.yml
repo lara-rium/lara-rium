@@ -42,7 +42,7 @@ jobs:
           fileName: grafana-image-renderer-linux-amd64
       - id: chrome
         uses: browser-actions/setup-chrome@v2
-      - uses: mfinelli/setup-imagemagick@v7
+      - uses: mfinelli/setup-imagemagick@v8
       - run: |
           chmod +x ${{ fromJson(steps.download.outputs.downloaded_files)[0] }}
           ${{ fromJson(steps.download.outputs.downloaded_files)[0] }} server --api.default-encoding png --browser.path ${{ steps.chrome.outputs.chrome-path }} &
