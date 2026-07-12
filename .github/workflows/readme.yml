@@ -35,10 +35,10 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - id: download
-        uses: robinraju/release-downloader@v1.12
+        uses: robinraju/release-downloader@v1.13
         with:
           repository: grafana/grafana-image-renderer
-          latest: true
+          tag: v5.9.1
           fileName: grafana-image-renderer-linux-amd64
       - id: chrome
         uses: browser-actions/setup-chrome@v2
